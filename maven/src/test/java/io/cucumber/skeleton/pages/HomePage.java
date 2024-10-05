@@ -23,6 +23,9 @@ public class HomePage extends Page {
   @FindBy(xpath = "//div[@id='content']//ul//li//a[contains(text(), 'Basic Auth')]")
   WebElement basicAuth;
 
+  @FindBy(xpath = "//div[@id='content']//ul//li //a[contains(text(),'Sortable Data Tables')]")
+  WebElement sortableData;
+
   public WebElement getTitle() {
     return title;
   }
@@ -38,5 +41,9 @@ public class HomePage extends Page {
 
   public void basicAuthClick() {
     basicAuth.click();
+  }
+
+  public void clickSortableData() {
+    sortableData.click();
   }
 }

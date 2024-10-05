@@ -59,4 +59,8 @@ public class Home extends Context {
   public void basicAuthIsOpened() {
     homePage.basicAuthClick();
   }
+  @When("the 'Sortable Data Tables' is opened")
+  public void sortableDataTableIsOpened() {
+    homePage.clickSortableData();
+  }
 }
